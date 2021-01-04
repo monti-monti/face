@@ -1,8 +1,19 @@
-# face
-## 项目用到的第三方库
-opencv-python、time、Flask
+云计算部署docker  
+先进入你的主机  
+## 1.复制文件  
+$ `git clone https://github.com/jtshinn/test2.git`  
+$ `cd test2`  
+$ `cd opencv`  
+## 2.构建docker镜像  
+$ `docker build -t moting_app .`  
+## 3.创建容器  
+$ `docker run -it --rm -p 8888:8888 moting_app`  
+## 使用方法：  
+在浏览器里输入：  
+`localhost:8888`
 
-## 项目说明
-直接运行main.py进行flask的部署，之后打开网页，上传图片进行人脸识别（性别、年龄）。
-
-monti测试用
+***
+## 备注
+>  
+>  
+>  
